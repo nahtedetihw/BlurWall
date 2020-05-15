@@ -1,0 +1,10 @@
+Package: com.nahtedetihw.blurwall
+Name: Blurwall
+Depends: mobilesubstrate, ws.hbang.common, com.spark.libsparkcolourpicker
+Version: 1.0
+Architecture: iphoneos-arm
+Description: Blur Wallpaper!
+Maintainer: Ethan Whited
+Author: Ethan Whited
+Section: Tweaks
+
