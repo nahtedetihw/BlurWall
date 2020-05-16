@@ -2,6 +2,7 @@
 
 BOOL enabledHS;
 BOOL enabledLS;
+BOOL enableLSCornerRadius;
 NSInteger wallBlurStyleHS;
 NSInteger wallBlurStyleLS;
 double alphaValueHS;
@@ -50,7 +51,7 @@ UIVisualEffectView *blurWallEffectViewHS;
     UIVisualEffectView *blurWallEffectViewHS = [[UIVisualEffectView alloc] initWithEffect:blurEffectHS];
 
     // Set the View frame to the frame of SBHomeScreenView
-    blurWallEffectViewHS.frame = self.bounds;
+    blurWallEffectViewHS.frame = [UIScreen mainScreen].bounds;
     blurWallEffectViewHS.layer.masksToBounds = YES;
 
     // Allow users to set the opacity of the blur
@@ -116,19 +117,11 @@ UIVisualEffectView *blurWallEffectViewLS;
     UIVisualEffectView *blurWallEffectViewLS = [[UIVisualEffectView alloc] initWithEffect:blurEffectLS];
 
     // Set the View frame to the frame of SBUIBackgroundView
-    blurWallEffectViewLS.frame = self.bounds;
+    blurWallEffectViewLS.frame = [UIScreen mainScreen].bounds;
     blurWallEffectViewLS.layer.masksToBounds = YES;
 
     // Allow users to set the opacity of the blur
     blurWallEffectViewLS.alpha = alphaValueLS;
-
-    // Set the corner radius of just the bottom left and bottom right corners, this makes it look much better when transitioning to HomeScreen
-    UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:blurWallEffectViewLS.bounds byRoundingCorners:(UIRectCornerBottomLeft | UIRectCornerBottomRight) cornerRadii:CGSizeMake(39.0, 39.0)];
-
-    CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
-    maskLayer.frame = blurWallEffectViewLS.bounds;
-    maskLayer.path  = maskPath.CGPath;
-    blurWallEffectViewLS.layer.mask = maskLayer;
 
     // Add the View to SBUIBackgroundView, but specify that it is inserted to the first slot (puts it behind the clock/quick actions toggles)
     [self insertSubview:blurWallEffectViewLS atIndex:0];
@@ -154,6 +147,7 @@ UIVisualEffectView *blurWallEffectViewLS;
     [preferences registerBool:&enabledHS default:NO forKey:@"enabledHS"];
     [preferences registerInteger:&wallBlurStyleHS default:0 forKey:@"wallBlurStyleHS"];
     [preferences registerBool:&enabledLS default:NO forKey:@"enabledLS"];
+    [preferences registerBool:&enableLSCornerRadius default:NO forKey:@"enableLSCornerRadius"];
     [preferences registerInteger:&wallBlurStyleLS default:0 forKey:@"wallBlurStyleLS"];
     [preferences registerDouble:&alphaValueHS default:1.0 forKey:@"alphaValueHS"];
     [preferences registerDouble:&alphaValueLS default:1.0 forKey:@"alphaValueLS"];
