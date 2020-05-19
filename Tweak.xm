@@ -22,28 +22,79 @@ UIVisualEffectView *blurWallEffectViewHS;
 
     // Create the Blur Effect
     UIBlurEffect *blurEffectHS;
-
+        
+        // Ultra Thin
         if (wallBlurStyleHS == 0) {
             blurEffectHS = [UIBlurEffect effectWithStyle:UIBlurEffectStyleSystemUltraThinMaterial];
         }
-
+        
+        // Ultra Thin - Consistent Light
         if (wallBlurStyleHS == 1) {
             blurEffectHS = [UIBlurEffect effectWithStyle:UIBlurEffectStyleSystemUltraThinMaterialLight];
         }
-
+        
+        // Ultra Thin - Consistent Dark
         if (wallBlurStyleHS == 2) {
             blurEffectHS = [UIBlurEffect effectWithStyle:UIBlurEffectStyleSystemUltraThinMaterialDark];
         }
-    
+        
+        // Thin
         if (wallBlurStyleHS == 3) {
+            blurEffectHS = [UIBlurEffect effectWithStyle:UIBlurEffectStyleSystemThinMaterial];
+        }
+        
+        // Thin - Consistent Light
+        if (wallBlurStyleHS == 4) {
+            blurEffectHS = [UIBlurEffect effectWithStyle:UIBlurEffectStyleSystemThinMaterialLight];
+        }
+
+        // Thin - Consistent Dark
+        if (wallBlurStyleHS == 5) {
+            blurEffectHS = [UIBlurEffect effectWithStyle:UIBlurEffectStyleSystemThinMaterialDark];
+        }
+        
+        // Normal
+        if (wallBlurStyleHS == 6) {
+            blurEffectHS = [UIBlurEffect effectWithStyle:UIBlurEffectStyleSystemMaterial];
+        }
+        
+        // Normal - Consistent Light
+        if (wallBlurStyleHS == 7) {
+            blurEffectHS = [UIBlurEffect effectWithStyle:UIBlurEffectStyleSystemMaterialLight];
+        }
+
+        // Normal - Consistent Dark
+        if (wallBlurStyleHS == 8) {
+            blurEffectHS = [UIBlurEffect effectWithStyle:UIBlurEffectStyleSystemMaterialDark];
+        }
+        
+        // Thick
+        if (wallBlurStyleHS == 9) {
+            blurEffectHS = [UIBlurEffect effectWithStyle:UIBlurEffectStyleSystemThickMaterial];
+        }
+        
+        // Thick - Consistent Light
+        if (wallBlurStyleHS == 10) {
+            blurEffectHS = [UIBlurEffect effectWithStyle:UIBlurEffectStyleSystemThickMaterialLight];
+        }
+        
+        // Thick - Consistent Dark
+        if (wallBlurStyleHS == 11) {
+            blurEffectHS = [UIBlurEffect effectWithStyle:UIBlurEffectStyleSystemThickMaterialDark];
+        }
+        
+        // Chrome
+        if (wallBlurStyleHS == 12) {
             blurEffectHS = [UIBlurEffect effectWithStyle:UIBlurEffectStyleSystemChromeMaterial];
         }
 
-        if (wallBlurStyleHS == 4) {
+        // Chrome - Consistent Light
+        if (wallBlurStyleHS == 13) {
             blurEffectHS = [UIBlurEffect effectWithStyle:UIBlurEffectStyleSystemChromeMaterialLight];
         }
-
-        if (wallBlurStyleHS == 5) {
+        
+        // Chrome - Consistent Dark
+        if (wallBlurStyleHS == 14) {
             blurEffectHS = [UIBlurEffect effectWithStyle:UIBlurEffectStyleSystemChromeMaterialDark];
         }
 
@@ -89,27 +140,78 @@ UIVisualEffectView *blurWallEffectViewLS;
     // Create the Blur Effect
     UIBlurEffect *blurEffectLS;
 
+        // Ultra Thin
         if (wallBlurStyleLS == 0) {
             blurEffectLS = [UIBlurEffect effectWithStyle:UIBlurEffectStyleSystemUltraThinMaterial];
         }
-
+        
+        // Ultra Thin - Consistent Light
         if (wallBlurStyleLS == 1) {
             blurEffectLS = [UIBlurEffect effectWithStyle:UIBlurEffectStyleSystemUltraThinMaterialLight];
         }
-
+        
+        // Ultra Thin - Consistent Dark
         if (wallBlurStyleLS == 2) {
             blurEffectLS = [UIBlurEffect effectWithStyle:UIBlurEffectStyleSystemUltraThinMaterialDark];
         }
-    
+        
+        // Thin
         if (wallBlurStyleLS == 3) {
+            blurEffectLS = [UIBlurEffect effectWithStyle:UIBlurEffectStyleSystemThinMaterial];
+        }
+        
+        // Thin - Consistent Light
+        if (wallBlurStyleLS == 4) {
+            blurEffectLS = [UIBlurEffect effectWithStyle:UIBlurEffectStyleSystemThinMaterialLight];
+        }
+
+        // Thin - Consistent Dark
+        if (wallBlurStyleLS == 5) {
+            blurEffectLS = [UIBlurEffect effectWithStyle:UIBlurEffectStyleSystemThinMaterialDark];
+        }
+        
+        // Normal
+        if (wallBlurStyleLS == 6) {
+            blurEffectLS = [UIBlurEffect effectWithStyle:UIBlurEffectStyleSystemMaterial];
+        }
+        
+        // Normal - Consistent Light
+        if (wallBlurStyleLS == 7) {
+            blurEffectLS = [UIBlurEffect effectWithStyle:UIBlurEffectStyleSystemMaterialLight];
+        }
+
+        // Normal - Consistent Dark
+        if (wallBlurStyleLS == 8) {
+            blurEffectLS = [UIBlurEffect effectWithStyle:UIBlurEffectStyleSystemMaterialDark];
+        }
+        
+        // Thick
+        if (wallBlurStyleLS == 9) {
+            blurEffectLS = [UIBlurEffect effectWithStyle:UIBlurEffectStyleSystemThickMaterial];
+        }
+        
+        // Thick - Consistent Light
+        if (wallBlurStyleLS == 10) {
+            blurEffectLS = [UIBlurEffect effectWithStyle:UIBlurEffectStyleSystemThickMaterialLight];
+        }
+        
+        // Thick - Consistent Dark
+        if (wallBlurStyleLS == 11) {
+            blurEffectLS = [UIBlurEffect effectWithStyle:UIBlurEffectStyleSystemThickMaterialDark];
+        }
+        
+        // Chrome
+        if (wallBlurStyleLS == 12) {
             blurEffectLS = [UIBlurEffect effectWithStyle:UIBlurEffectStyleSystemChromeMaterial];
         }
 
-        if (wallBlurStyleLS == 4) {
+        // Chrome - Consistent Light
+        if (wallBlurStyleLS == 13) {
             blurEffectLS = [UIBlurEffect effectWithStyle:UIBlurEffectStyleSystemChromeMaterialLight];
         }
-
-        if (wallBlurStyleLS == 5) {
+        
+        // Chrome - Consistent Dark
+        if (wallBlurStyleLS == 14) {
             blurEffectLS = [UIBlurEffect effectWithStyle:UIBlurEffectStyleSystemChromeMaterialDark];
         }
 
