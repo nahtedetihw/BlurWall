@@ -50,13 +50,17 @@
 		</dict>
 		<dict>
 			<key>cell</key>
-			<string>PSSegmentCell</string>
+			<string>PSLinkListCell</string>
 			<key>default</key>
 			<string>0</string>
 			<key>defaults</key>
 			<string>com.nahtedetihw.blurwallprefs</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
 			<key>key</key>
 			<string>wallBlurStyleHS</string>
+			<key>label</key>
+			<string>HomeScreen Styles</string>
 			<key>validValues</key>
 			<array>
 				<string>0</string>
@@ -65,18 +69,34 @@
 				<string>3</string>
 				<string>4</string>
 				<string>5</string>
+				<string>6</string>
+				<string>7</string>
+				<string>8</string>
+				<string>9</string>
+				<string>10</string>
+				<string>11</string>
+				<string>12</string>
+				<string>13</string>
+				<string>14</string>
 			</array>
 			<key>validTitles</key>
 			<array>
+				<string>Ultra Thin</string>
+				<string>Ultra Thin - Consistent Light</string>
+				<string>Ultra Thin - Consistent Dark</string>
 				<string>Thin</string>
-				<string>ThinLight</string>
-				<string>ThinDark</string>
+				<string>Thin - Consistent Light</string>
+				<string>Thin - Consistent Dark</string>
+				<string>Normal</string>
+				<string>Normal - Consistent Light</string>
+				<string>Normal - Consistent Dark</string>
+				<string>Thick</string>
+				<string>Thick - Consistent Light</string>
+				<string>Thick - Consistent Dark</string>
 				<string>Chrome</string>
-				<string>ChromeLight</string>
-				<string>ChromeDark</string>
+				<string>Chrome - Consistent Light</string>
+				<string>Chrome - Consistent Dark</string>
 			</array>
-			<key>alignment</key>
-			<string>1</string>
 			<key>PostNotification</key>
 			<string>com.nahtedetihw.blurwallprefs/ReloadPrefs</string>
 		</dict>
@@ -138,13 +158,17 @@
 		</dict>
 		<dict>
 			<key>cell</key>
-			<string>PSSegmentCell</string>
+			<string>PSLinkListCell</string>
 			<key>default</key>
 			<string>0</string>
 			<key>defaults</key>
 			<string>com.nahtedetihw.blurwallprefs</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
 			<key>key</key>
 			<string>wallBlurStyleLS</string>
+			<key>label</key>
+			<string>LockScreen Styles</string>
 			<key>validValues</key>
 			<array>
 				<string>0</string>
@@ -153,18 +177,34 @@
 				<string>3</string>
 				<string>4</string>
 				<string>5</string>
+				<string>6</string>
+				<string>7</string>
+				<string>8</string>
+				<string>9</string>
+				<string>10</string>
+				<string>11</string>
+				<string>12</string>
+				<string>13</string>
+				<string>14</string>
 			</array>
 			<key>validTitles</key>
 			<array>
+				<string>Ultra Thin</string>
+				<string>Ultra Thin - Consistent Light</string>
+				<string>Ultra Thin - Consistent Dark</string>
 				<string>Thin</string>
-				<string>ThinLight</string>
-				<string>ThinDark</string>
+				<string>Thin - Consistent Light</string>
+				<string>Thin - Consistent Dark</string>
+				<string>Normal</string>
+				<string>Normal - Consistent Light</string>
+				<string>Normal - Consistent Dark</string>
+				<string>Thick</string>
+				<string>Thick - Consistent Light</string>
+				<string>Thick - Consistent Dark</string>
 				<string>Chrome</string>
-				<string>ChromeLight</string>
-				<string>ChromeDark</string>
+				<string>Chrome - Consistent Light</string>
+				<string>Chrome - Consistent Dark</string>
 			</array>
-			<key>alignment</key>
-			<string>1</string>
 			<key>PostNotification</key>
 			<string>com.nahtedetihw.blurwallprefs/ReloadPrefs</string>
 		</dict>
@@ -194,7 +234,7 @@
 			<key>footerAlignment</key>
 			<string>1</string>
 			<key>footerText</key>
-			<string>BlurWall 1.1</string>
+			<string>BlurWall 1.2</string>
 		</dict>
 		<dict>
 			<key>cell</key>
